@@ -8,9 +8,11 @@
  * @see <a href="http://www.d-project.com/" target="_blank">http://www.d-project.com/</a>
  * @see <a href="http://jeromeetienne.github.com/jquery-qrcode/" target="_blank">http://jeromeetienne.github.com/jquery-qrcode/</a>
  */
-var QRCode;
+// var QRCode;
 
-(function () {
+// (function () {
+// Wiz: for seajs
+define(function(require, exports, module) {
 	//---------------------------------------------------------------------
 	// QRCode for JavaScript
 	//
@@ -611,4 +613,7 @@ var QRCode;
 	 * @name QRCode.CorrectLevel
 	 */
 	QRCode.CorrectLevel = QRErrorCorrectLevel;
-})();
+// })();
+ 
+	module.exports = QRCode;
+});
